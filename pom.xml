@@ -97,12 +97,11 @@
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
 	      <url>http://localhost:8081/repository/tesla-releases/</url>
-		    
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Landmark Technologies Snapshot Nexus Repository </name>
+	      <name>Landmark Technologies Snapshot Nexus Repository</name>
 	      <url>http://localhost:8081/repository/tesla-snapshots/</url>
 	    </snapshotRepository>
 	    

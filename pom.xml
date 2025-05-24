@@ -24,10 +24,10 @@
 		<log4j.version>1.2.17</log4j.version>
 		<sonar.host.url>http://127.0.0.1:9000/</sonar.host.url> 
 		<sonar.login>squ_8ab38e537fa602289c0bd08ad007c7a0fd46be48/sonar.login>
-		<!-- <sonar.password>dan</sonar.password> -->
+	<!--	<sonar.password>dan</sonar.password> -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-	</properties>
+                <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        </properties>
 
 	<dependencies>
 		

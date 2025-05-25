@@ -1,0 +1,50 @@
+node {
+    // Set the Maven tool from Jenkins global config
+    def mvnHome = tool name: 'maven_3.9.9', type: 'hudson.tasks.Maven$MavenInstallation'
+
+    stage('1_Git_Clone') {
+        // Clone the repository from GitHub using main branch
+        git branch: 'main', url: 'https://github.com/MyITword/web-app'
+    }
+
+    stage('2_Build_Test') {
+        // Use the tool path to run Maven
+        sh "${mvnHome}/bin/mvn clean package"
+    }
+
+// Comment start here
+
+/*
+    stage('3_Code_Quality') {
+        // Use the tool path to run Maven
+        sh "${mvnHome}/bin/mvn sonar:sonar"
+    }
+    
+    stage('4_Deploy_Artifacts') {
+        // Use the tool path to run Maven
+        sh "${mvnHome}/bin/mvn deploy"
+    }
+   
+    stage('5Email_Notification'){
+        emailext body: '''Hello All,
+
+Check build status.
+
+Thank you.
+
+liliyons infotech domain''', recipientProviders: [developers(), upstreamDevelopers(), brokenBuildSuspects()], subject: 'Build Status', to: 'chedan2080@gmail.com'
+    }
+
+
+// Comment ends here
+    */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}

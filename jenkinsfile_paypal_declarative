@@ -17,7 +17,8 @@ pipeline {
         sh 'mvn clean package'
                         }
             }
-    
+
+/*
     stage ('Code_Quality') {
         steps {
             sh 'mvn sonar:sonar'
@@ -37,7 +38,7 @@ pipeline {
             deploy adapters: [tomcat9(alternativeDeploymentContext: '', credentialsId: 'tomcat_cred', path: '', url: 'http://192.168.3.136:8080')], contextPath: null, war: 'target/tesla.war'
                             }
             }
-   
+*/   
         
     }
 }
